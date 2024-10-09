@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cabecalho{
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+    list-style-type: none; /*tirar tópicos*/
+    padding: 0 100px;
+}
+
+.menu_link{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+#menu_link_comprar{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 16px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: #c13512;
+    height: 40px;
+    width: 100px;
+}
+
+#menu_link_comprar:hover{
+    background-color: #b43211;
+}
+
+#secao1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/assets/fundo.png');
+    background-size: 100% 75%;
+    background-repeat: no-repeat;
+}
+
+.secao1_h1{
+    color: white;
+    font-family: "Libre Baskerville", serif;;
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+    width: 900px;
+}
+
+.secao1_paragrafo{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    width: 800px;
+    padding-top: 10px;
+}
+
+.secao1_botoes {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+    text-align: center;
+    width: 404px;
+}
+
+#secao1_botao1, #secao1_botao2 {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #023F3A;
+    background-color: white;
+    border-radius: 0;
+    border: 2px solid white;
+    padding: 15px 0;
+    width: 100%;
+    display: block;  /* Torna o <a> um bloco */
+    text-decoration: none;  /* Remove o sublinhado */
+}
+
+#secao1_botao1 {
+    color: white;
+    background-color: transparent;
+}
+
+
+#secao1 img{
+    height: 419px;
+}
+
+#secao2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.secao2_container_texto{
+    width: 550px;
+    padding-right: 33px;
+}
+
+.secao2_h2 , .secao3_h2 , .secao4_h2 , .secao5_h2{
+    color: #023F3A;
+    font-family: "Libre Baskerville", serif;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.secao2_paragrafo {
+    color: #525560;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.secao2_icones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.secao2_h3 {
+    color: #18191f;
+    font-family: "Libre Baskerville", serif;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    padding-right: 10px;
+    width: 40px;
+    height: auto;
+}
+
+.imagem_maior , .imagens_menores{
+    filter: drop-shadow(0px 4px 6px rgba(24, 25, 31, 0.5));
+}
+
+.imagens_menores {
+    display: flex;
+    gap: 25px;
+    padding-top: 20px;
+}
+
+#secao3 {
+    padding-top: 80px;
+    height: 600px;
+}
+
+.secao3_h2 {
+    text-align: center;
+}
+
+.secao3_imagens {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.imagem-container {
+    position: relative;
+    width: 350px;
+    height: 362px;
+}
+
+.imagem-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra todo o contêiner sem distorção */
+    display: block;
+    border-radius: 15px;
+}
+
+.imagem-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.secao3_imagens_textos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: white;
+    z-index: 2;
+}
+
+.secao3_subtitulo{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Libre Baskerville", serif;
+    color: white;
+    font-weight: 400;
+}
+
+.secao3_paragrafo {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding-top: 15px;
+}
+
+#secao4{
+    background-color: #f2eee9;
+    text-align: center;
+    padding: 64px;
+}
+
+.secao4_testemunhos{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.secao4_container{
+    height: 222px;
+    width: 287px;
+}
+
+.secao4_container_paragrafo{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #525560;
+}
+
+.secao4_container_imagens{
+    padding: 27px;
+}
+
+.secao4_container_nome{
+    font-family: "Libre Baskerville", serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #18191f;
+}
+
+#secao5 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.secao5_slider { 
+    position: relative;
+    max-width: 1200px; /* Ajuste a largura do slider conforme necessário */
+    margin: auto;
+    overflow: hidden;
+}
+
+.secao5_container_slides { 
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Suaviza a transição */
+}
+
+.secao5_slide { 
+    display: flex;
+    min-width: 100%; /* Cada slide ocupa 100% da largura do slider */
+    box-sizing: border-box; 
+    gap: 20px;
+}
+
+.image-container , .image-container img{ 
+    width: 100%; /* Faz com que as imagens ocupem toda a largura do slide */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.image-container p{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #023F3A;
+    padding-top: 10px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 30px 20px; /* Tamanho do botão */
+    font-size: 50px; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+    filter: drop-shadow(0 2px 4px black); /* Aplica o drop shadow */
+
+}
+
+button.prev {
+    left: 10px; /* Ajusta a posição do botão anterior */
+}
+
+button.next {
+    right: 10px; /* Ajusta a posição do botão seguinte */
+}
