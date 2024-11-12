@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh.Co</title>
+    <title>ECOnsciente</title>
     <link rel="stylesheet" href="/styles/style.css"> 
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header id="cabecalho">
-        <nav>
+        <nav id="nav">
+            <div>
+                <img class="logo" src="/assets/logo.png">
+                <h2 class="logo_texto">Projeto ECOnsciente</h2>
+            </div>
             <ul class="menu">
-                <li><a class="menu_link" href="index.html">How it works</a></li>
-                <li><a class="menu_link" href="#">Sobre Nós</a></li>
-                <li><a class="menu_link" href="#">Parceiros</a></li>
-                <li><a class="menu_link" href="#">Contato</a></li>
-                <li><a id="menu_link_comprar" href=#">Compre Agora</a></li>
+                <li><a class="menu_link" href="index.html">Início</a></li>
+                <li><a class="menu_link" href="#secao2">Nossa Missão</a></li>
+                <li><a class="menu_link" href="#secao4">ODS</a></li>
+                <li><a class="menu_link" href="#secao3">Dicas de Economia</a></li>
             </ul>            
         </nav>
     </header>
     
     <main>
         <section id="secao1">
-            <h1 class="secao1_h1">Agricultura Orgânica Reimaginada com Fresh.Co</h1>
+            <h1 class="secao1_h1">Pequenas Ações, Grandes Mudanças</h1>
         
-            <p class="secao1_paragrafo">A Fresh.Co combina tecnologia e sustentabilidade para transformar a agricultura orgânica, garantindo colheitas mais saudáveis e um futuro mais verde.</p>        
-            <div class="secao1_botoes">
+            <p class="secao1_paragrafo">Cada escolha que fazemos tem um impacto no planeta. Descubra como você pode contribuir de forma simples e prática para um ambiente mais saudável!</p>        
+            <!--<div class="secao1_botoes">
                 <a id="secao1_botao1" href="https://www.google.com/" target="_blank">Começar Agora</a>
                 <a id="secao1_botao2" href="https://www.google.com/" target="_blank">Iniciar Teste</a>
-            </div>
+            </div>-->
         
             <img src="assets/estufa.png" alt="Imagem de Estufa">
         </section>
@@ -37,181 +41,137 @@
             <div class="secao2_container_texto">
                 <h2 class="secao2_h2">Nossa Missão</h2>
         
-                <p class="secao2_paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                <p class="secao2_paragrafo">Nossa missão é capacitar a comunidade a adotar práticas sustentáveis que promovam a economia de água e energia. Acreditamos que <span class="highlight">pequenas ações individuais, quando </span> <span class="highlight">somadas, podem gerar um grande impacto positivo </span>no meio ambiente e na qualidade de vida de todos.</p>
         
-                <p class="secao2_paragrafo">Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+                <p class="secao2_paragrafo">Junte-se a nós nesta jornada! Cada um de nós tem o poder de fazer a diferença. Ao compartilhar dicas, participar de desafios e praticar hábitos sustentáveis, estamos moldando um futuro mais sustentável para as próximas gerações.</p>
         
-                <div class="secao2_icones">
-                    <h3 class="secao2_h3">
-                        <img class="icon" src="/assets/organic.png" alt="Ícone representando uma mão segurando uma planta"> Produção Orgânica
-                    </h3>
-        
-                    <h3 class="secao2_h3">
-                        <img class="icon" src="/assets/delivery.png" alt="Ícone de carrinho de cortar grama"> Entrega Rápida
-                    </h3>
-        
-                    <h3 class="secao2_h3">
-                        <img class="icon" src="/assets/certified.png" alt="Ícone de saco de fertilizante"> Produtos Certificados
-                    </h3>
-                </div>
             </div>
         
             <div class="secao2_container_imagens">
                 <div class="imagem_maior">
-                    <img src="/assets/homem regando.png" alt="Homem regando plantas">
+                    <img src="/assets/maos com terra.jpg" alt="Homem regando plantas">
                 </div>
-        
-                <div class="imagens_menores">
-                    <img src="/assets/plantacao sendo colhida.png" alt="Plantação sendo colhida">
-                    <img src="/assets/feira.png" alt="Feira de produtos orgânicos">
-                </div>
+
             </div>
         </section>
 
-        <section id="secao3"> 
-            <h2 class="secao3_h2">Choose from the best</h2>
-
-                <div class="secao3_imagens">
-                    
-                    <div class="imagem-container">
-                        <img src="/assets/agriculture_leader.png" alt="Paisagem">
-                        <div class="secao3_imagens_textos">
-                            <h3 class="secao3_subtitulo">Agriculture Leader</h3>
-                            <p class="secao3_paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-
-                    <div class="imagem-container">
-                        <img src="/assets/quality_standards.png" alt="Cachos de Uva">
-                        <div class="secao3_imagens_textos">
-                            <h3 class="secao3_subtitulo">Quality Standards</h3>
-                            <p class="secao3_paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-
-                    <div class="imagem-container">
-                        <img src="/assets/organic_services.png" alt="Estufa">
-                        <div class="secao3_imagens_textos">
-                            <h3 class="secao3_subtitulo">Organic Services</h3>
-                            <p class="secao3_paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-
-                    </div>
-        </section>
-
        <section id="secao4"> 
-            <h2 class="secao4_h2">Testimonials</h2>
 
-            <div class="secao4_testemunhos">
-                <div class="secao4_container">
-                    <p class="secao4_container_paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    <img class="secao4_container_imagens" src="/assets/testemunho_mulher.png" alt="Foto de mulher">
-                    <h3 class="secao4_container_nome">Kyla Harmon</h3>
+            <div class="secao4_container">
+                <div class="secao4_imagem">
+                    <img class="secao4_container_imagens" src="/assets/objetivos ods.png" alt="Logo do objetivo 11 da ODS">
                 </div>
     
-                <div class="secao4_container">
-                    <p class="secao4_container_paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    <img class="secao4_container_imagens" src="assets/testemunho_homem1.png" alt="Foto de homem">
-                    <h3 class="secao4_container_nome">Ryan Menzie</h3>
+                <div class="secao4_textos">
+                    <h2 class="secao4_h2">Nosso compromisso com os ODS</h2>
+                    <p class="secao4_container_paragrafo">Nosso projeto está alinhado com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU, buscando contribuir para um mundo mais sustentável e inclusivo. Acreditamos que, ao trabalhar coletivamente, podemos enfrentar os desafios ambientais e sociais que nossa comunidade enfrenta.</p>
+                    <p class="secao4_container_paragrafo">ODS que Abordamos:</p>
+                    
+                    <div class="secao4_icones">
+                        <h3 class="secao4_h3">
+                            <img class="ods_icon" src="/assets/ods 6.png" alt="Logo ODS 6">ODS 6 - Água Potável e Saneamento
+                        </h3>
+            
+                        <h3 class="secao4_h3">
+                            <img class="ods_icon" src="/assets/ods 7.png" alt="Logo ODS 7"> ODS 7 – Energia Acessível e Limpa
+                        </h3>
+            
+                        <h3 class="secao4_h3">
+                            <img class="ods_icon" src="/assets/ods 11.png" alt="Logo ODS 11"> ODS 11 – Cidades e Comunidades Sustentáveis
+                        </h3>
+
+                        <h3 class="secao4_h3">
+                            <img class="ods_icon" src="/assets/ods 12.png" alt="Logo ODS 12"> ODS 12 - Consumo e Produção Responsáveis
+                        </h3>
+                    </div>
                 </div>
-    
-                <div class="secao4_container">
-                    <p class="secao4_container_paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    <img class="secao4_container_imagens" src="/assets/testemunho_homem2.png" alt="Foto de homem">
-                    <h3 class="secao4_container_nome">Aldrich Fowler</h3>
-                </div>
+
             </div>
             
 
         </section>
 
-        <section id="secao5">
-    <h2 class="secao5_h2">Rediscover the taste</h2>
-    
-    <div class="secao5_slider">
-        <div class="secao5_container_slides">
-            <div class="secao5_slide">
-                <div class="image-container">
-                    <img src="/assets/tomate.png" alt="Foto de Tomates">
-                    <p>Tomate</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/tomate.png" alt="Foto de Tomates">
-                    <p>Tomate</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/tomate.png" alt="Foto de Tomates">
-                    <p>Tomate</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/tomate.png" alt="Foto de Tomates">
-                    <p>Tomate</p> <!-- Texto abaixo da imagem -->
-                </div>
-            </div>
-            <div class="secao5_slide">
-                <div class="image-container">
-                    <img src="/assets/cenoura.png" alt="Foto de Cenoura">
-                    <p>Cenoura</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/cenoura.png" alt="Foto de Cenoura">
-                    <p>Cenoura</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/cenoura.png" alt="Foto de Cenoura">
-                    <p>Cenoura</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/cenoura.png" alt="Foto de Cenoura">
-                    <p>Cenoura</p> <!-- Texto abaixo da imagem -->
-                </div>
-            </div>
-            <div class="secao5_slide">
-                <div class="image-container">
-                    <img src="/assets/batata.png" alt="Foto de Batatas">
-                    <p>Batata</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/batata.png" alt="Foto de Batatas">
-                    <p>Batata</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/batata.png" alt="Foto de Batatas">
-                    <p>Batata</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/batata.png" alt="Foto de Batatas">
-                    <p>Batata</p> <!-- Texto abaixo da imagem -->
-                </div>
-            </div>
-            <div class="secao5_slide">
-                <div class="image-container">
-                    <img src="/assets/vagem.png" alt="Foto de Vagens">
-                    <p>Vagem</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/vagem.png" alt="Foto de Vagens">
-                    <p>Vagem</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/vagem.png" alt="Foto de Vagens">
-                    <p>Vagem</p> <!-- Texto abaixo da imagem -->
-                </div>
-                <div class="image-container">
-                    <img src="/assets/vagem.png" alt="Foto de Vagens">
-                    <p>Vagem</p> <!-- Texto abaixo da imagem -->
-                </div>
-            </div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-    
-        
-        <script src="script.js"></script>
+        <section id="secao3"> 
+            <h2 class="secao3_h2">Por onde começar?</h2>
+            <h3 class="secao3_h3">Passe o mouse sobre os cards e confira dicas de economia!</h3>
 
+            <div class="secao3_imagens">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Frente do Card -->
+                        <div class="flip-card-front imagem-container">
+                            <img src="/assets/agriculture_leader.png" alt="Paisagem">
+                            <div class="secao3_imagens_textos">
+                                <h3 class="secao3_subtitulo">Economize Água</h3>
+                                <p class="secao3_paragrafo">A água é um dos recursos mais preciosos e, ainda assim, um dos mais desperdiçados. Conheça dicas simples para reduzir o consumo de água em casa.</p>
+                            </div>
+                        </div>
+                        <!-- Verso do Card -->
+                        <div class="flip-card-back imagem-container">
+                            <div class="secao3_imagens_textos">
+                                <h3 class="secao3_subtitulo">Dicas para Economizar Água</h3>
+                                <ul class="secao3_paragrafo">
+                                    <li>Feche a torneira ao escovar os dentes</li>
+                                    <li>Use um balde em vez da mangueira para lavar o carro</li>
+                                    <li>Reutilize água da chuva para regar plantas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Repetir a mesma estrutura para os outros cards -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front imagem-container">
+                            <img src="/assets/quality_standards.png" alt="Cachos de Uva">
+                            <div class="secao3_imagens_textos">
+                                <h3 class="secao3_subtitulo">Economize Energia</h3>
+                                <p class="secao3_paragrafo">Economizar energia reduz sua conta e protege o meio ambiente. Veja como pequenas mudanças na rotina podem fazer uma grande diferença!</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back imagem-container">
+                            <div class="secao3_imagens_textos">
+                                <h3 class="secao3_subtitulo">Dicas para Economizar Energia</h3>
+                                <ul class="secao3_paragrafo">
+                                    <li>Desligue aparelhos em vez de deixá-los em standby</li>
+                                    <li>Use lâmpadas de LED, que são mais eficientes</li>
+                                    <li>Desligue o ar-condicionado ao sair de um cômodo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front imagem-container">
+                            <img src="/assets/organic_services.png" alt="Estufa">
+                            <div class="secao3_imagens_textos">
+                                <h3 class="secao3_subtitulo">Reciclagem</h3>
+                                <p class="secao3_paragrafo">A reciclagem é essencial para reduzir resíduos e economizar energia. Ao reciclar, você contribui para um ambiente mais limpo e sustentável!</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back imagem-container">
+                            <div class="secao3_imagens_textos">
+                                <h3 class="secao3_subtitulo">Dicas para Reciclagem</h3>
+                                <ul class="secao3_paragrafo">
+                                    <li>Separe materiais recicláveis e orgânicos</li>
+                                    <li>Evite o uso de plásticos descartáveis</li>
+                                    <li>Reutilize embalagens sempre que possível</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div>
+            <p>Este site foi desenvolvido como parte de um trabalho acadêmico. Nosso objetivo é promover a conscientização sobre a importância da sustentabilidade e das práticas responsáveis em nossa comunidade.</p>
+        </div>
+        
+    </footer>
 </body>
 </html>

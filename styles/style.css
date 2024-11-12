@@ -8,46 +8,52 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #cabecalho{
     background-color: white;
-    height: 60px;
+    height: 70px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+}
 
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+#nav div{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.logo{
+    height: 45px;
+}
+
+.logo_texto{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    color: #02391e;
 }
 
 .menu{
     display: flex;
-    gap: 40px;
-    list-style-type: none; /*tirar tópicos*/
-    padding: 0 100px;
+    gap: 70px;
+    list-style-type: none;
 }
 
 .menu_link{
     font-family: "Josefin Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    color: #02391e;
     text-decoration: none;
-}
-
-#menu_link_comprar{
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 16px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    background-color: #c13512;
-    height: 40px;
-    width: 100px;
-}
-
-#menu_link_comprar:hover{
-    background-color: #b43211;
 }
 
 #secao1{
@@ -55,19 +61,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('/assets/fundo.png');
+    background-image: url('/assets/fundo\ verde.png');
     background-size: 100% 75%;
     background-repeat: no-repeat;
+    padding-bottom: 40px;
+
 }
 
 .secao1_h1{
     color: white;
-    font-family: "Libre Baskerville", serif;;
+    font-family: "Libre Baskerville", serif;
     font-size: 56px;
     font-weight: 700;
     text-align: center;
     padding-top: 50px;
-    width: 900px;
+    width: 700px;
 }
 
 .secao1_paragrafo{
@@ -78,46 +86,23 @@
     text-align: center;
     width: 800px;
     padding-top: 10px;
-}
+    padding-bottom: 30px;
 
-.secao1_botoes {
-    display: flex;
-    gap: 30px;
-    padding-top: 30px;
-    text-align: center;
-    width: 404px;
-}
-
-#secao1_botao1, #secao1_botao2 {
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: #023F3A;
-    background-color: white;
-    border-radius: 0;
-    border: 2px solid white;
-    padding: 15px 0;
-    width: 100%;
-    display: block;  /* Torna o <a> um bloco */
-    text-decoration: none;  /* Remove o sublinhado */
-}
-
-#secao1_botao1 {
-    color: white;
-    background-color: transparent;
 }
 
 
 #secao1 img{
-    height: 419px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #secao2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 60px;
+    padding: 60px 0;
+
 }
 
 .secao2_container_texto{
@@ -126,11 +111,21 @@
 }
 
 .secao2_h2 , .secao3_h2 , .secao4_h2 , .secao5_h2{
-    color: #023F3A;
+    color: #02391e;
     font-family: "Libre Baskerville", serif;
     font-size: 48px;
     font-weight: 700;
     padding-bottom: 40px;
+}
+
+.secao2_h2{
+    padding-bottom: 20px;
+}
+
+.highlight{
+    color: #f2eee9;
+    background-color: #02391e;
+    padding: 0 5px;
 }
 
 .secao2_paragrafo {
@@ -149,15 +144,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.secao2_h3 {
-    color: #18191f;
-    font-family: "Libre Baskerville", serif;
-    font-size: 18px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-}
-
 .icon {
     padding-right: 10px;
     width: 40px;
@@ -168,6 +154,11 @@
     filter: drop-shadow(0px 4px 6px rgba(24, 25, 31, 0.5));
 }
 
+.imagem_maior img{
+    width: 445px;
+    border-radius: 15px;
+}
+
 .imagens_menores {
     display: flex;
     gap: 25px;
@@ -176,13 +167,24 @@
 
 #secao3 {
     padding-top: 80px;
-    height: 600px;
+    height: 650px;
 }
 
 .secao3_h2 {
     text-align: center;
+    padding-bottom: 10px;
 }
 
+.secao3_h3 {
+    text-align: center;
+    padding-bottom: 40px;
+    color: #525560;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Container de Imagens */
 .secao3_imagens {
     display: flex;
     justify-content: center;
@@ -190,49 +192,158 @@
     position: relative;
 }
 
-.imagem-container {
-    position: relative;
+/* Efeito Flip em 3D */
+.flip-card {
+    perspective: 1000px;
     width: 350px;
     height: 362px;
+    position: relative;
 }
 
-.imagem-container img {
+/* Efeito de flip interno */
+.flip-card-inner {
+    position: relative;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra todo o contêiner sem distorção */
-    display: block;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Aplica rotação ao passar o mouse no flip-card */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Frente e Verso do Card */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Frente do Card com Sobreposição Escura */
+.flip-card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
     border-radius: 15px;
 }
 
-.imagem-container::before {
+/* Imagem na Frente do Card */
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Sobreposição escura para destacar o texto */
+.flip-card-front::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     z-index: 1;
 }
 
-.secao3_imagens_textos {
+/* Efeito de Hover na Imagem da Frente */
+.flip-card-front:hover img {
+    transform: scale(1.05);
+}
+
+/* Texto sobre a Imagem (Frente do Card) */
+.flip-card-front .secao3_imagens_textos {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 15px;
     color: white;
-    z-index: 2;
+    z-index: 2; /* Garante que o texto fique acima da sobreposição escura */
 }
 
-.secao3_subtitulo{
+/* Estilo do Verso do Card */
+.flip-card-back {
+    background-color: #02391e; /* Cor de fundo do verso */
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column; /* Garantir que os itens fiquem empilhados verticalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    height: 100%; /* Faz com que o verso ocupe toda a altura do card */
+    position: relative; /* Garante o controle do layout */
+}
+
+/* Texto sobre a Imagem no Verso */
+.flip-card-back .secao3_imagens_textos {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: none;
+    font-size: 16px;
+}
+
+/* Listagem de dicas no Verso */
+.flip-card-back ul {
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: 0;
+    font-size: 16px;
+    margin-top: 15px; /* Adiciona um espaçamento entre o título e as dicas */
+    color: white; /* Garante que o texto das dicas seja branco */
+    font-family: "Josefin Sans", sans-serif; /* Altera a fonte para melhorar a legibilidade */
+}
+
+/* Estilo de cada item da lista */
+.flip-card-back ul li {
+    position: relative; /* Permite a adição de um ícone personalizado */
+    margin-bottom: 12px; /* Maior espaçamento entre os itens */
+    padding-left: 25px; /* Espaçamento à esquerda para os ícones */
+    font-weight: 400;
+    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Ícone estilizado para cada item da lista */
+.flip-card-back ul li::before {
+    content: '•'; /* Usando um ponto como marcador */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px; /* Tamanho do marcador */
+    color: #fff; /* Cor dourada para o marcador */
+    transition: transform 0.3s ease; /* Efeito de animação ao passar o mouse */
+}
+
+/* Efeito de Hover */
+.flip-card-back ul li:hover {
+    color: #fff; /* Muda a cor do texto ao passar o mouse */
+}
+
+.flip-card-back ul li:hover::before {
+    transform: scale(1.3); /* Aumenta o ícone quando passa o mouse */
+}
+
+
+/* Ajustes gerais para o texto */
+.secao3_subtitulo {
     margin: 0;
     font-size: 24px;
     font-weight: 600;
     font-family: "Libre Baskerville", serif;
     color: white;
-    font-weight: 400;
+    text-shadow: 2px 2px 5px #18191f;
 }
 
 .secao3_paragrafo {
@@ -241,100 +352,87 @@
     font-weight: 400;
     color: white;
     padding-top: 15px;
+    text-shadow: 2px 2px 5px #18191f;
 }
+
 
 #secao4{
     background-color: #f2eee9;
-    text-align: center;
-    padding: 64px;
+    height: 600px;
 }
 
-.secao4_testemunhos{
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    justify-content: center;
+.secao4_h2{
+    font-size: 40px;
+    padding-bottom: 25px;
 }
 
 .secao4_container{
-    height: 222px;
-    width: 287px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.secao4_imagem{
+
 }
 
 .secao4_container_paragrafo{
     font-family: "Josefin Sans", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     color: #525560;
+    padding-bottom: 20px;
 }
+
+.secao4_icones {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.secao4_h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #525560;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ods_icon {
+    width: 55px;
+    border-radius: 50px;
+}
+
 
 .secao4_container_imagens{
-    padding: 27px;
+    height: 450px;
+    width: auto;
+    border-radius: 15px;
+    filter: drop-shadow(5px 5px 5px rgba(41, 35, 11, 0.3));
 }
 
-.secao4_container_nome{
-    font-family: "Libre Baskerville", serif;
-    font-size: 22px;
-    font-weight: 400;
-    color: #18191f;
+footer{
+    background-color: #02391e;
 }
 
-#secao5 {
+footer div{
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
     text-align: center;
-    padding: 50px 0;
-}
-
-.secao5_slider { 
-    position: relative;
-    max-width: 1200px; /* Ajuste a largura do slider conforme necessário */
-    margin: auto;
-    overflow: hidden;
-}
-
-.secao5_container_slides { 
-    display: flex;
-    transition: transform 0.5s ease-in-out; /* Suaviza a transição */
-}
-
-.secao5_slide { 
-    display: flex;
-    min-width: 100%; /* Cada slide ocupa 100% da largura do slider */
-    box-sizing: border-box; 
-    gap: 20px;
-}
-
-.image-container , .image-container img{ 
-    width: 100%; /* Faz com que as imagens ocupem toda a largura do slide */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.image-container p{
     font-family: "Josefin Sans", sans-serif;
     font-size: 20px;
-    font-weight: 600;
-    color: #023F3A;
-    padding-top: 10px;
-}
-
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 30px 20px; /* Tamanho do botão */
-    font-size: 50px; /* Tamanho da fonte */
-    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
-    filter: drop-shadow(0 2px 4px black); /* Aplica o drop shadow */
-
-}
-
-button.prev {
-    left: 10px; /* Ajusta a posição do botão anterior */
-}
-
-button.next {
-    right: 10px; /* Ajusta a posição do botão seguinte */
+    font-weight: 400;
+    color: #f2eee9;
+    padding: 40px;
+    width: 900px;
 }
